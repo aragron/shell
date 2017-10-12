@@ -18,4 +18,5 @@ git checkout master
 sleep 1
 git merge $Branch
 sleep 1
-git push origin master
+git tag -a $(date "+%Y%m%d%H%M%S") -m "prod merge to master"
+git push origin master --tags
