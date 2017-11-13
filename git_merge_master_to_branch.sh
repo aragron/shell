@@ -26,4 +26,5 @@ pwd
 ls
 git push origin $Branch
 #mv ./* .. && cd .. && rm -fr $ProjectName
-mv ./* .. && mv ./.[^.]* .. && cd .. && rm -fr $ProjectName
+yes|cp -R . ..
+cd .. && rm -fr $ProjectName
