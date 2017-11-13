@@ -25,4 +25,5 @@ pwd
 #git push $RepositoryURL $ProjectName
 ls
 git push origin $Branch
-mv ./* .. && cd .. && rm -fr $ProjectName
+#mv ./* .. && cd .. && rm -fr $ProjectName
+mv ./* .. && mv ./.[^.]* .. && cd .. && rm -fr $ProjectName
